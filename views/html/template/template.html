@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유원 상철 사진 페이지</title>
+    {{.addhead}}
+</head>
+
+<body>
+    <div class="page-header">
+        <h1 style="margin-left:10px">갤러리<small>사진을 모아보자!!</small></h1>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">SCYW</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li id="nav-show">
+                    <a href="show">사진</a>
+                </li>
+                <li id="nav-upload">
+                    <a href="upload">사진올리기</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        {{ .bodycontent }}
+    </div>
+    {{.BodyScript}}
+    <script>
+        InitTemplate("{{.uri}}");
+    </script>
+</body>
+
+</html>

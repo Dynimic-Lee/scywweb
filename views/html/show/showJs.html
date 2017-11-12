@@ -1,0 +1,13 @@
+<script>
+    var t = document.getElementsByClassName('img-del');
+
+    function imageDelete(event) {
+        //console.log(event.currentTarget);
+        removeImage(event);
+        event.preventDefault();
+    }
+
+    for(var i = 0; i < t.length; i++) {
+        t[i].addEventListener('click', imageDelete)
+    };
+</script>

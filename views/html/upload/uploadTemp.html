@@ -1,0 +1,11 @@
+<div style="padding-right:19px; padding-left:19px">
+    <div class="file-loading">
+        <input id="input-gly" name="upload" type="file" multiple>
+    </div>
+</div>
+<script>
+    $("#input-gly").fileinput({
+        theme: "gly",
+        uploadUrl: "/uploadImage"
+    });
+</script>

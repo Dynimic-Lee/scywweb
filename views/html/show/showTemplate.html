@@ -1,0 +1,22 @@
+<div class="row" style="margin-left:30px;margin-right:30px">
+    {{range .}}
+    <div class="col-xs-6 col-md-3" id="{{.FileName}}">
+        <div class="thumbnail">
+            <a href="/image/{{.FileName}}" class="thumbnail my-thumbnail">
+                <img src="/image/{{.FileName}}" class="my-thumb-img" data-holder-rendered="true" alt="">
+                <div class="img-del">
+                    <i class="my-fa fa fa-trash-o fa-2x"></i>
+                </div>
+            </a>
+            <div class="caption">
+                <h3>{{.FileName}}</h3>
+                <p>
+                    FileSize : {{.FileSize}}</br>
+                    ImgSize : {{.ImgSize}}</br>
+                    UploadDate : {{.UploadDate}}</br>
+                </p>
+            </div>
+        </div>
+    </div>
+    {{end}}
+</div>
